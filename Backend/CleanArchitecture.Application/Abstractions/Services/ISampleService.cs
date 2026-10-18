@@ -1,0 +1,11 @@
+using CleanArchitecture.Application.DTOs.Samples;
+
+namespace CleanArchitecture.Application.Abstractions.Services
+{
+    public interface ISampleService
+    {
+        Task<SampleDTO> GetById(Guid id, CancellationToken cancellationToken = default);
+
+        Task<SampleDTO> Create(CreateSampleRequestDTO request, CancellationToken cancellationToken = default);
+    }
+}
