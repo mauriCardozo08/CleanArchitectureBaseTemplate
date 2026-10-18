@@ -5,14 +5,14 @@
   "identity": "CleanArchitecture.Backend.Template",
   "name": "Clean Architecture Backend (.NET 10)",
   "shortName": "cleanarch",
-  "description": "Monolithic .NET 10 backend following Clean Architecture (API, Application, Domain, Infrastructure, Contracts).",
+  "description": "Monolithic .NET 10 backend following Clean Architecture (API, Application, Domain, Infrastructure).",
   "tags": { "language": "C#", "type": "solution" },
   "sourceName": "CleanArchitecture",
   "preferNameDirectory": true,
   "sources": [
     {
       "modifiers": [
-        { "exclude": [ ".git/**", ".template.config/**", "README.md", "**/bin/**", "**/obj/**" ] }
+        { "exclude": [ ".git/**", ".template.config/**", "README.md", "CLAUDE.md", "**/bin/**", "**/obj/**" ] }
       ]
     }
   ],

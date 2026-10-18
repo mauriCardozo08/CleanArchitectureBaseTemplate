@@ -1,7 +1,6 @@
 using CleanArchitecture.API;
 using CleanArchitecture.API.Exceptions;
 using CleanArchitecture.Application;
-using CleanArchitecture.Contracts;
 using CleanArchitecture.Domain;
 using CleanArchitecture.Infrastructure;
 
@@ -12,8 +11,7 @@ var configuration = builder.Configuration;
 builder.Services
     .AddApplicationModule()
     .AddDomainModule()
-    .AddInfrastructureModule(configuration)
-    .AddContractsModule();
+    .AddInfrastructureModule(configuration);
 
 builder.Services.AddControllers();
 builder.Services.AddProblemDetails();

@@ -27,10 +27,9 @@ Backend/
   CleanArchitecture.Application      Services, DTOs, repository/service abstractions, app exceptions, resx messages
   CleanArchitecture.Domain           Entities, value objects, domain exceptions
   CleanArchitecture.Infrastructure   EF Core (SQL Server) DbContext, configurations, repositories
-  CleanArchitecture.Contracts        Cross-module contracts (empty by default)
 ```
 
-Dependencies: `API -> Application, Infrastructure, Contracts` · `Infrastructure -> Application, Domain` · `Application -> Domain`.
+Dependencies: `API -> Application, Infrastructure` · `Infrastructure -> Application, Domain` · `Application -> Domain`.
 
 Each layer exposes an `Add<Layer>Module()` extension that `Program.cs` composes.
 
