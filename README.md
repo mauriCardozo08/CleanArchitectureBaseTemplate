@@ -1,5 +1,5 @@
 # CleanArchitectureBaseTemplate
-Personal Clean Architecture template for monolithic .NET 10 backends, based on the structure of `AuthServer`.
+Personal Clean Architecture template for monolithic .NET 10 backends.
 
 ## Usage
 
